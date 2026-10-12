@@ -389,7 +389,7 @@ function planShareText(){
  Object.entries(last.shopping).forEach(([item,q])=>{const unit=item.includes('(')?item.split('(')[1].split(')')[0]:'';lines.push('• '+item.split(' (')[0]+': '+String(Math.round(q*100)/100).replace('.',',')+' '+unit);});
  lines.push('','💰 Custo total ilustrativo: R$ '+last.total.toFixed(2).replace('.',','));
  lines.push('','Crie também seu cardápio gratuitamente: '+APP_URL);
- return lines.join('\\n');
+ return lines.join('\n');
 }
 async function shareContent(text,title){
  if(navigator.share){
