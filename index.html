@@ -387,7 +387,7 @@ $('feedback-form').addEventListener('submit',e=>{
  const kind=$('feedback-type').value;
  const message=$('feedback-message').value.trim();
  const subject='Minha Semana — '+kind+' ('+selected.value+'/5)';
- const body=['Olá, equipe Minha Semana!','','Minha avaliação: '+selected.value+' de 5','Assunto: '+kind,'','Minha mensagem:',message||'(Sem comentário adicional)','','Enviado a partir do Minha Semana 6.0'].join('\\n');
+ const body=['Olá, equipe Minha Semana!','','Minha avaliação: '+selected.value+' de 5','Assunto: '+kind,'','Minha mensagem:',message||'(Sem comentário adicional)','','Enviado a partir do Minha Semana 6.0'].join('\n');
  window.location.href='mailto:minhasemana.receitas@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
 });
 const APP_URL='https://jackellinerobertta-cell.github.io/minha-semana/';
